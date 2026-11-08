@@ -170,7 +170,7 @@ export const About = () => {
               Work Experience & Career Timeline
             </h3>
             <p className="text-muted small mb-0">
-              Demonstrated impact across consulting, SaaS, and financial analytics engagements.
+              Practical experience in data management, dashboard design, Excel instruction, and Python/SQL analytics.
             </p>
           </div>
 

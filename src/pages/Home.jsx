@@ -304,8 +304,8 @@ export const Home = () => {
                   <div className="p-3 rounded-3 bg-light border d-flex align-items-center gap-3">
                     <Award size={28} style={{ color: '#0284c7' }} />
                     <div>
-                      <div className="fw-bold small text-dark">Microsoft Certified: Power BI (PL-300)</div>
-                      <div className="text-muted" style={{ fontSize: '0.75rem' }}>Microsoft Associate Certification</div>
+                      <div className="fw-bold small text-dark">Data Analytics & Computing</div>
+                      <div className="text-muted" style={{ fontSize: '0.75rem' }}>Stephotech Computer Institute (2026)</div>
                     </div>
                   </div>
                 </div>
@@ -313,8 +313,8 @@ export const Home = () => {
                   <div className="p-3 rounded-3 bg-light border d-flex align-items-center gap-3">
                     <Award size={28} style={{ color: '#059669' }} />
                     <div>
-                      <div className="fw-bold small text-dark">Google Advanced Data Analytics</div>
-                      <div className="text-muted" style={{ fontSize: '0.75rem' }}>Google Professional Certificate</div>
+                      <div className="fw-bold small text-dark">Senior School Certificate (WAEC)</div>
+                      <div className="text-muted" style={{ fontSize: '0.75rem' }}>Iganmode Grammar School (2021)</div>
                     </div>
                   </div>
                 </div>
