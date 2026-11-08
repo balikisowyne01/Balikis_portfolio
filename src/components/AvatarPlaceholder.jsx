@@ -1,19 +1,18 @@
 import { useState } from 'react';
+import profilePhoto from '../assets/profile.jpg';
 import defaultAvatar from '../assets/balikis_avatar.svg';
 
 /**
  * AvatarPlaceholder Component
  * 
- * When Nurudeen Balikis supplies her profile photo, place it in:
- * `src/assets/profile.jpg` or `src/assets/profile.png`
- * and pass the import as `customSrc`.
- * 
- * If not supplied yet, this renders the bespoke, stylized SVG data analyst avatar.
+ * Uses Nurudeen Balikis's real profile photo from `src/assets/profile.jpg`.
+ * If an error occurs, it smoothly falls back to the SVG avatar.
  */
 export const AvatarPlaceholder = ({ 
   size = 260, 
   alt = "Nurudeen Balikis — Data Analyst",
-  customSrc = null,
+  customSrc = profilePhoto,
+  objectPosition = "center 18%",
   className = "" 
 }) => {
   const [imageError, setImageError] = useState(false);
@@ -38,6 +37,7 @@ export const AvatarPlaceholder = ({
             width: `${size}px`,
             height: `${size}px`,
             objectFit: 'cover',
+            objectPosition: objectPosition,
             borderRadius: '50%'
           }}
           loading="eager"
