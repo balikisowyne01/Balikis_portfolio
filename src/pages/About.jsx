@@ -14,31 +14,8 @@ import {
   Layers,
   HeartHandshake
 } from "lucide-react";
-import Swal from "sweetalert2";
 
 export const About = () => {
-  const handleDownloadCV = () => {
-    Swal.fire({
-      title: "Download Resume",
-      text: "Nurudeen Balikis's CV / Resume will download directly. You can also connect via email or LinkedIn for custom inquiries.",
-      icon: "info",
-      showCancelButton: true,
-      confirmButtonText: "Download PDF",
-      cancelButtonText: "Close",
-      confirmButtonColor: "#0284c7"
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          title: "Download Initiated",
-          text: "Resume download has commenced. Thank you for your interest!",
-          icon: "success",
-          timer: 2500,
-          showConfirmButton: false
-        });
-      }
-    });
-  };
-
   return (
     <div className="bg-light-main min-vh-100 py-5">
       <div className="container px-3 px-md-4">
@@ -68,10 +45,15 @@ export const About = () => {
               </div>
 
               <div className="d-flex justify-content-center gap-2">
-                <button onClick={handleDownloadCV} className="btn btn-primary-gradient btn-sm px-3 py-2">
+                <a 
+                  href="/Nurudeen_Balikis_CV.pdf"
+                  download="Nurudeen_Balikis_CV.pdf"
+                  className="btn btn-primary-gradient btn-sm px-3 py-2 text-decoration-none"
+                  title="Download Nurudeen Balikis's CV"
+                >
                   <Download size={14} />
                   <span>Download Resume (CV)</span>
-                </button>
+                </a>
                 <a href={`mailto:${bioData.email}`} className="btn btn-outline-gradient btn-sm px-3 py-2">
                   <Mail size={14} />
                   <span>Contact</span>
