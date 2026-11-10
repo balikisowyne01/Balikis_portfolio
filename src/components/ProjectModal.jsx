@@ -81,6 +81,28 @@ export const ProjectModal = ({ project, onClose }) => {
           </div>
         )}
 
+        {/* Project Visual Gallery / Output Plots */}
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="mb-4">
+            <h6 className="fw-bold text-muted small text-uppercase mb-2">Project Visualizations & Charts</h6>
+            <div className="row g-2">
+              {project.gallery.map((imgSrc, i) => (
+                <div key={i} className="col-12 col-sm-6">
+                  <div className="border rounded-3 overflow-hidden bg-white shadow-sm p-1 text-center">
+                    <img 
+                      src={imgSrc} 
+                      alt={`${project.title} visualization ${i + 1}`} 
+                      className="img-fluid w-100" 
+                      style={{ maxHeight: '180px', objectFit: 'contain' }}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Project Overview */}
         <div className="mb-4">
           <h5 className="fw-bold mb-2" style={{ color: '#0f172a' }}>Project Overview & Methodology</h5>

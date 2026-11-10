@@ -1,6 +1,43 @@
+import monthlyRevenueImg from "../assets/projects/monthly_revenue.png";
+import revenueByProductImg from "../assets/projects/revenue_by_product.png";
+import profitByProductImg from "../assets/projects/profit_by_product.png";
+import revenueByRegionImg from "../assets/projects/revenue_by_region.png";
+
 export const projectsData = [
   {
     id: 1,
+    title: "Sales Performance Analysis",
+    category: "python",
+    categoryLabel: "Python (NumPy, Pandas & Matplotlib)",
+    badge: "Verified GitHub Project",
+    type: "Retail Sales & Profitability Analysis",
+    period: "2026",
+    client: "Sales Intelligence Case Study",
+    image: monthlyRevenueImg,
+    gallery: [monthlyRevenueImg, revenueByProductImg, profitByProductImg, revenueByRegionImg],
+    summary: "End-to-end Python sales performance analysis utilizing NumPy for vectorized transaction calculations, Pandas for multi-dimensional data grouping, and Matplotlib for multi-chart visual reporting.",
+    desc: "Engineered a complete retail sales analytics script in Python evaluating transactions across 3 products (Laptop, Phone, Tablet), 4 geographic sales regions (West, East, North, South), and a 4-month timeline (January to April). Leveraged NumPy array operations to compute total revenue ($14,800), total cost ($11,940), and net profit ($2,860). Programmatically exported tabular sales data to CSV and generated 4 publication-quality Matplotlib visualizations: monthly revenue trend lines, product profit horizontal bars, revenue contribution bar charts, and regional revenue share pie charts.",
+    impact: "Pinpointed Laptop as the primary revenue ($6,000) and profit ($1,200) driver, highlighted March as the peak sales month, and mapped regional revenue distributions to guide marketing decisions.",
+    features: [
+      "Vectorized NumPy calculations for individual transaction revenue, unit cost, and profit margins",
+      "Aggregated KPI metrics computing Total Revenue ($14.8K), Total Cost ($11.9K), and Total Profit ($2.86K)",
+      "Pandas DataFrame modeling and multi-level GroupBy analysis on product and regional performance",
+      "Exported 4 high-resolution Matplotlib charts: monthly revenue trend, product profit, product revenue, and regional pie chart",
+      "Automated CSV export of structured sales data into clean data/sales_data.csv files"
+    ],
+    metrics: [
+      { label: "Total Revenue", value: "$14,800" },
+      { label: "Total Profit", value: "$2,860" },
+      { label: "Top Product", value: "Laptop ($6K)" },
+      { label: "Charts Built", value: "4 Plots" }
+    ],
+    techStack: ["Python", "NumPy", "Pandas", "Matplotlib", "CSV", "Git & GitHub"],
+    tools: ["Python 3", "NumPy", "Pandas", "Matplotlib", "GitHub"],
+    demoUrl: null,
+    githubUrl: "https://github.com/balikisowyne01/Sales_Performance_analysis"
+  },
+  {
+    id: 2,
     title: "Student Result Management System",
     category: "python",
     categoryLabel: "Python & OOP",
@@ -30,7 +67,7 @@ export const projectsData = [
     githubUrl: "https://github.com/balikisowyne01/"
   },
   {
-    id: 2,
+    id: 3,
     title: "SQL Database Management & Query Architecture",
     category: "sql",
     categoryLabel: "SQL (MySQL & PostgreSQL)",
@@ -60,7 +97,7 @@ export const projectsData = [
     githubUrl: "https://github.com/balikisowyne01/"
   },
   {
-    id: 3,
+    id: 4,
     title: "Excel Data Analysis & Interactive Dashboard",
     category: "excel",
     categoryLabel: "Microsoft Excel",
@@ -88,42 +125,12 @@ export const projectsData = [
     tools: ["Microsoft Excel", "Spreadsheet Modeling"],
     demoUrl: null,
     githubUrl: "https://github.com/balikisowyne01/"
-  },
-  {
-    id: 4,
-    title: "Data Analysis & Wrangling with Pandas & NumPy",
-    category: "python",
-    categoryLabel: "Python (Pandas & NumPy)",
-    badge: "Data Wrangling & Cleaning",
-    type: "Exploratory Data Analysis",
-    period: "2026",
-    client: "Data Analytics Project",
-    summary: "Python data processing and exploratory analysis pipeline utilizing Pandas and NumPy to clean, reshape, and extract insights from CSV and JSON file formats.",
-    desc: "Ingested heterogeneous datasets from CSV and JSON files into Pandas DataFrames. Handled missing records, eliminated duplicate rows, transformed data types, and applied vectorized NumPy calculations for statistical aggregation and distribution analysis.",
-    impact: "Demonstrated reproducible data cleaning workflows converting messy raw file exports into structured, analysis-ready tabular data.",
-    features: [
-      "Pandas DataFrame wrangling: filtering, column indexing, sorting, and grouping",
-      "Missing value detection, data cleaning strategies, and duplicate removal",
-      "Vectorized NumPy calculations for numerical computing and statistical metrics",
-      "Multi-format ingestion: working with both CSV and structured JSON files",
-      "Jupyter Notebook execution with documented step-by-step analytical findings"
-    ],
-    metrics: [
-      { label: "Libraries", value: "Pandas • NumPy" },
-      { label: "File Types", value: "CSV & JSON" },
-      { label: "Cleaning", value: "100% Verified" },
-      { label: "Environment", value: "Jupyter" }
-    ],
-    techStack: ["Python", "Pandas", "NumPy", "CSV", "JSON", "Jupyter Notebook", "Git & GitHub"],
-    tools: ["Python 3", "Pandas", "NumPy", "Jupyter Notebook", "GitHub"],
-    demoUrl: null,
-    githubUrl: "https://github.com/balikisowyne01/"
   }
 ];
 
 export const projectCategories = [
   { id: "all", label: "All Projects" },
-  { id: "python", label: "Python (Pandas & NumPy)" },
+  { id: "python", label: "Python (NumPy & Pandas)" },
   { id: "sql", label: "SQL (MySQL & PostgreSQL)" },
   { id: "excel", label: "Microsoft Excel" }
 ];

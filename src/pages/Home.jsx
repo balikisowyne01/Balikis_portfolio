@@ -218,6 +218,19 @@ export const Home = () => {
                       {project.title}
                     </h4>
 
+                    {/* Optional Project Visualization Thumbnail */}
+                    {project.image && (
+                      <div className="mb-3 rounded-3 overflow-hidden border bg-white p-1 text-center shadow-sm">
+                        <img 
+                          src={project.image} 
+                          alt={project.title} 
+                          className="img-fluid" 
+                          style={{ maxHeight: '150px', objectFit: 'contain' }}
+                          loading="lazy" 
+                        />
+                      </div>
+                    )}
+
                     {/* Summary */}
                     <p className="text-secondary small mb-3 lh-base">
                       {project.summary}
