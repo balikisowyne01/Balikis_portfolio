@@ -40,31 +40,31 @@ export const projectsData = [
     id: 2,
     title: "Student Result Management System",
     category: "python",
-    categoryLabel: "Python & OOP",
-    badge: "Python Application",
-    type: "Academic Performance Management",
+    categoryLabel: "Python, Pandas, PostgreSQL & Power BI",
+    badge: "Verified GitHub Project",
+    type: "Academic Data & Analytics Workbench",
     period: "2026",
-    client: "Stephotech Computer Institute",
-    summary: "Object-oriented Python application engineered to record, calculate, and manage student grades, GPAs, and class performance records with input validation.",
-    desc: "Developed a modular student result processing system using Python's object-oriented programming (OOP) principles. The application encapsulates student profiles, validates subject score inputs, computes cumulative averages and grade classifications, and exports summary report cards.",
-    impact: "Automated manual score recording and grade computations, eliminating calculation discrepancies and streamlining result compilation.",
+    client: "Data Analytics & Academic Operations",
+    summary: "End-to-end Student Result Management & Analytics System built with Python, Pandas, PostgreSQL/SQL, Matplotlib/Seaborn, and Power BI–ready views on the 5.0 GPA scale.",
+    desc: "Engineered a full-stack data analyst workbench for academic result processing, ETL, and performance reporting. Built on a normalized PostgreSQL/SQL schema (with SQLite local fallback) and SQLAlchemy ORM, the system ingests bulk CSV/Excel score sheets via a Pandas validation pipeline, computes weighted 5.0-scale GPA/CGPA and academic standing, flags at-risk students, renders Matplotlib/Seaborn statistical visualizations, exports formatted Excel broadsheets and PDF transcripts, and exposes SQL analytical views for Power BI dashboards.",
+    impact: "Eliminated manual spreadsheet errors through automated Pandas ETL validation, centralized academic records in relational SQL with an immutable audit log, and enabled self-service Power BI reporting.",
     features: [
-      "Object-oriented classes managing Student, Course, and Gradebook entities",
-      "Dynamic GPA calculation and automated letter grade classification logic",
-      "Input validation preventing invalid numeric scores or duplicate entries",
-      "File handling for saving and retrieving student academic records",
-      "Clean command-line interface with interactive menus and student search"
+      "Normalized PostgreSQL schema (students, courses, semesters, results, audit_logs) with SQL views for Power BI",
+      "Pandas bulk CSV/Excel ETL pipeline with schema, range (0-100), and duplicate validation before database commit",
+      "Automated 5.0-scale GPA/CGPA engine, carry-over tracking, academic standing classification, and at-risk student alerts",
+      "Matplotlib & Seaborn analytics: grade distribution, score histogram + KDE, department CGPA boxplots, course pass rates, and CA vs. Exam regression",
+      "Multi-sheet Excel broadsheet export, Power BI fact dataset export, and official A4 PDF student transcripts"
     ],
     metrics: [
-      { label: "Core Language", value: "Python 3" },
-      { label: "Architecture", value: "OOP Design" },
-      { label: "Calculation", value: "100% Accurate" },
-      { label: "Output", value: "Result Cards" }
+      { label: "Database", value: "PostgreSQL / SQL" },
+      { label: "ETL & Stats", value: "Pandas & NumPy" },
+      { label: "Visuals", value: "Matplotlib & Seaborn" },
+      { label: "BI Ready", value: "Power BI Views" }
     ],
-    techStack: ["Python", "OOP", "File Handling", "Data Validation", "Git & GitHub"],
-    tools: ["Python 3", "VS Code", "Git", "GitHub"],
-    demoUrl: null,
-    githubUrl: "https://github.com/balikisowyne01/"
+    techStack: ["Python", "Pandas", "PostgreSQL", "SQL", "Matplotlib", "Seaborn", "Power BI", "Git & GitHub"],
+    tools: ["Python 3", "Pandas", "PostgreSQL", "Matplotlib", "Seaborn", "Power BI", "Streamlit", "Pytest"],
+    demoUrl: "https://balikisowyne01-student-result-management--app-t6tent.streamlit.app/",
+    githubUrl: "https://github.com/balikisowyne01/Student-Result-Management-"
   },
   {
     id: 3,
